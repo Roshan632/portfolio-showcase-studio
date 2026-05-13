@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
+import { toast } from "sonner";
 import portrait from "@/assets/portrait.jpg";
+import { trackCvDownload } from "@/lib/track-cv";
 
 export function Hero() {
   return (
@@ -54,10 +56,15 @@ export function Hero() {
               <ArrowDown className="size-4 group-hover:translate-y-0.5 transition-transform" />
             </a>
             <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-7 py-4 border border-border bg-card/40 backdrop-blur-sm rounded-xl hover:bg-card transition-all"
+              href="/alex-dev-cv.pdf"
+              download="Alex-Dev-CV.pdf"
+              onClick={() => {
+                trackCvDownload("hero");
+                toast.success("Downloading CV…");
+              }}
+              className="group inline-flex items-center gap-2 px-7 py-4 border border-border bg-card/40 backdrop-blur-sm rounded-xl hover:bg-card hover:border-primary/40 transition-all"
             >
-              <Download className="size-4" />
+              <Download className="size-4 group-hover:translate-y-0.5 transition-transform" />
               Download CV
             </a>
           </div>
