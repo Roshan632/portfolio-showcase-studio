@@ -1,7 +1,7 @@
 name: Build and Deploy Portfolio
 on:
   push:
-    branches: [main] # Change this to master if your primary branch is master
+    branches: [main, master] # Listens to both common branch names
 permissions:
   contents: read
   pages: write
@@ -30,7 +30,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist' # Lovable/Vite builds project files to the dist directory
+          path: 'dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
