@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 import { toast } from "sonner";
-import portrait from "@/assets/portrait.jpg";
+// import portrait from "@/assets/portrait.jpg";
+import portrait from "@/assets/Roshan.jpeg";
 import { trackCvDownload } from "@/lib/track-cv";
 
 export function Hero() {
@@ -13,12 +14,12 @@ export function Hero() {
       <div className="absolute inset-0 grid-bg pointer-events-none" />
       <div
         aria-hidden
-        className="absolute -top-40 -left-40 w-[500px] h-[500px] rounded-full blur-3xl opacity-25"
+        className="absolute -top-40 -left-40 w-125 h-125 rounded-full blur-3xl opacity-25"
         style={{ background: "var(--gradient-accent)" }}
       />
       <div
         aria-hidden
-        className="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full blur-3xl opacity-20 bg-accent"
+        className="absolute -bottom-40 -right-40 w-125 h-125 rounded-full blur-3xl opacity-20 bg-accent"
       />
 
       <div className="relative max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
@@ -56,8 +57,8 @@ export function Hero() {
               <ArrowDown className="size-4 group-hover:translate-y-0.5 transition-transform" />
             </a>
             <a
-              href="/alex-dev-cv.pdf"
-              download="Alex-Dev-CV.pdf"
+              href="/Roshancv.pdf"
+              download="Roshancv.pdf"
               onClick={() => {
                 trackCvDownload("hero");
                 toast.success("Downloading CV…");
@@ -96,13 +97,13 @@ export function Hero() {
           </motion.div>
 
           <div className="absolute -bottom-6 -left-6 bg-card/90 backdrop-blur-xl p-5 border border-border rounded-2xl">
-            <p className="font-display text-3xl font-bold text-primary">5+</p>
+            <p className="font-display text-3xl font-bold text-primary">2+</p>
             <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
               Years Experience
             </p>
           </div>
           <div className="absolute -top-6 -right-6 bg-card/90 backdrop-blur-xl p-5 border border-border rounded-2xl">
-            <p className="font-display text-3xl font-bold text-accent">40+</p>
+            <p className="font-display text-3xl font-bold text-accent">20+</p>
             <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
               Projects Shipped
             </p>

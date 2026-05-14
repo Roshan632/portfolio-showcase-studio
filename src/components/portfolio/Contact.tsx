@@ -14,6 +14,8 @@ const schema = z.object({
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID as string | undefined;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined;
+const CONTACT_EMAIL =
+  (import.meta.env.VITE_CONTACT_EMAIL as string | undefined) ?? "hello@alexdev.io";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
@@ -45,16 +47,30 @@ export function Contact() {
         SERVICE_ID,
         TEMPLATE_ID,
         {
+          name: parsed.data.name,
+          email: parsed.data.email,
           from_name: parsed.data.name,
           from_email: parsed.data.email,
+          user_name: parsed.data.name,
+          user_email: parsed.data.email,
+          reply_to: parsed.data.email,
+          to_name: "Roshan Yadav",
+          to_email: CONTACT_EMAIL,
           message: parsed.data.message,
         },
         { publicKey: PUBLIC_KEY },
       );
       toast.success("Message sent! I'll get back to you soon.");
       (e.target as HTMLFormElement).reset();
-    } catch {
-      toast.error("Failed to send. Please try again later.");
+    } catch (error) {
+      const message =
+        error && typeof error === "object" && "text" in error
+          ? String(error.text)
+          : "Please check your EmailJS template settings.";
+      console.error("EmailJS send failed:", error);
+      toast.error("Failed to send message", {
+        description: message,
+      });
     } finally {
       setLoading(false);
     }
@@ -85,27 +101,30 @@ export function Contact() {
 
           <div className="space-y-4 pt-4">
             <a
-              href="mailto:hello@alexdev.io"
+              // href="mailto:hello@alexdev.io"
+              // href="mailto:rosh45644@gmail.com"
+              href="mailto:whoezroshan@gmail.com"
+
               className="flex items-center gap-4 group"
             >
               <div className="size-10 grid place-items-center rounded-xl border border-border bg-card group-hover:border-primary group-hover:text-primary transition-colors">
                 <Mail className="size-4" />
               </div>
-              <span className="font-medium">hello@alexdev.io</span>
+              <span className="font-medium">whoezroshan@gmail.com</span>
             </a>
             <div className="flex items-center gap-4">
               <div className="size-10 grid place-items-center rounded-xl border border-border bg-card">
                 <MapPin className="size-4" />
               </div>
-              <span className="text-muted-foreground">San Francisco, CA</span>
+              <span className="text-muted-foreground">Jhapa, Nepal</span>
             </div>
           </div>
 
           <div className="flex gap-3 pt-2">
             {[
-              { Icon: Github, href: "https://github.com", label: "GitHub" },
-              { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { Icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+              { Icon: Github, href: "https://github.com/Roshan632", label: "GitHub" },
+              { Icon: Linkedin, href: "https://linkedin.com/in/roshanyadav632", label: "LinkedIn" },
+              { Icon: Twitter, href: "https://x.com/roshancodexx", label: "Twitter" },
             ].map(({ Icon, href, label }) => (
               <a
                 key={label}

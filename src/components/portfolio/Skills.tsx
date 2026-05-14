@@ -28,10 +28,10 @@ const groups = [
     icon: Server,
     accent: "accent",
     skills: [
-      { name: "Node.js / Bun", icon: Server },
+      { name: "Node.js", icon: Server },
       { name: "PostgreSQL", icon: Database },
-      { name: "GraphQL / tRPC", icon: Layers },
-      { name: "Rust / Go", icon: Cpu },
+      { name: "MongoDB", icon: Database },
+      { name: "MySQL ", icon: Database },
     ],
   },
   {

@@ -6,43 +6,43 @@ import p4 from "@/assets/project-4.jpg";
 
 const projects: Project[] = [
   {
-    title: "Nexus Analytics",
+    title: "Vehicle Repairing System",
     description:
-      "Real-time data processing dashboard handling millions of events with sub-100ms latency.",
+      "Built using MEN stack (ejs) that helps to search and find garages nearby solving the real time problems of vehicle owners in need.",
     image: p1,
-    tags: ["Next.js", "Three.js", "Rust"],
-    live: "https://example.com",
-    github: "https://github.com",
+    tags: ["MongoDB", "Node.js", "Express"],
+    live: "https://vehicle-repairing-system.vercel.app/",
+    github: "https://github.com/Roshan632/Vehicle-repairing-system",
     accent: "cyan",
   },
   {
-    title: "Aether Wallet",
+    title: "Bus Reservation System",
     description:
-      "Cross-chain crypto wallet with biometric auth and a glassmorphic interface design language.",
+      "Built using MERN stack that helps to solve real-time problems for bus reservation.",
     image: p2,
-    tags: ["React Native", "Web3.js", "Node.js"],
-    live: "https://example.com",
-    github: "https://github.com",
+    tags: ["React.js", "Express", "Node.js","MongoDB"],
+    live: "https://bus-booking-roshan.vercel.app/",
+    github: "https://github.com/Roshan632/BusBooking",
     accent: "violet",
   },
   {
-    title: "Codex Terminal",
+    title: "Airbnb Clone",
     description:
-      "AI-augmented developer terminal with semantic search across millions of lines of code.",
+      "Built using MEN stack (ejs) that allows Payment using eSewa and Khalti.",
     image: p3,
-    tags: ["Go", "TypeScript", "OpenAI"],
-    live: "https://example.com",
-    github: "https://github.com",
+    tags: ["Node.js", "MongoDB", "Express"],
+    live: "https://airbnb-project-mern.vercel.app/listings",
+    github: "https://github.com/Roshan632/Airbnb-Project-MERN",
     accent: "cyan",
   },
   {
-    title: "Vector Studio",
+    title: "Amazon Clone",
     description:
-      "Immersive 3D product configurator with WebGL ray-marched materials and live collaboration.",
+      "Built using own ways to make like amazon using only for static ways.",
     image: p4,
-    tags: ["React", "Three.js", "WebGL"],
-    live: "https://example.com",
-    github: "https://github.com",
+    tags: ["HTML", "CSS", "JS"],
+    live: "https://amazon-clone-roshan.vercel.app/",
+    github: "https://github.com/Roshan632/amazon-clone",
     accent: "violet",
   },
 ];
