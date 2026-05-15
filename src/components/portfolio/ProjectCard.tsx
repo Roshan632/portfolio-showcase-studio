@@ -57,10 +57,10 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       >
         <div
           aria-hidden
-          className={`absolute -inset-px rounded-3xl bg-gradient-to-br ${glow} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur`}
+          className={`absolute -inset-px rounded-3xl bg-linear-to-br ${glow} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur`}
         />
 
-        <div className="relative aspect-[16/10] overflow-hidden bg-background">
+        <div className="relative aspect-16/10 overflow-hidden bg-background">
           <img
             src={project.image}
             alt={`${project.title} preview`}
@@ -71,7 +71,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           />
           <div
             aria-hidden
-            className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent"
+            className="absolute inset-0 bg-linear-to-t from-card via-card/30 to-transparent"
           />
         </div>
 

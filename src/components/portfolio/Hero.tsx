@@ -105,7 +105,7 @@ export function Hero() {
           <div className="absolute -top-6 -right-6 bg-card/90 backdrop-blur-xl p-5 border border-border rounded-2xl">
             <p className="font-display text-3xl font-bold text-accent">20+</p>
             <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
-              Projects Shipped
+              Projects Done
             </p>
           </div>
         </motion.div>
