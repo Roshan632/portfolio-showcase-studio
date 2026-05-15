@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 import { toast } from "sonner";
-// import portrait from "@/assets/portrait.jpg";
-import portrait from "@/assets/Roshan.jpeg";
+import portrait from "@/assets/portrait.jpg";
+// import portrait from "@/assets/Roshan.jpeg";
 import { trackCvDownload } from "@/lib/track-cv";
 
 export function Hero() {
