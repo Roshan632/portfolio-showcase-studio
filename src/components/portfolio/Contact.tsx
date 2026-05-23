@@ -15,7 +15,7 @@ const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID as string | undefined
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined;
 const CONTACT_EMAIL =
-  (import.meta.env.VITE_CONTACT_EMAIL as string | undefined) ?? "hello@alexdev.io";
+  (import.meta.env.VITE_CONTACT_EMAIL as string | undefined) ?? "rosh45644@gmail.com";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
