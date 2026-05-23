@@ -11,11 +11,19 @@ const schema = z.object({
   message: z.string().trim().min(10, "Message must be at least 10 characters").max(2000),
 });
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID as string | undefined;
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined;
-const CONTACT_EMAIL =
-  (import.meta.env.VITE_CONTACT_EMAIL as string | undefined) ?? "rosh45644@gmail.com";
+// const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID as string | undefined;
+// const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
+// const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined;
+// const CONTACT_EMAIL =
+//   (import.meta.env.VITE_CONTACT_EMAIL as string | undefined) ?? "rosh45644@gmail.com";
+
+
+// For testing with EmailJS, we can hardcode the values here for working emailjs in live demo.
+// // Replace variable placeholders with raw strings directly
+const SERVICE_ID = "service_bwsab7d";
+const TEMPLATE_ID = "template_rthptm8";
+const PUBLIC_KEY = "hbFZ3WHfsl3efrJ5k";
+const CONTACT_EMAIL = "rosh45644@gmail.com";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
