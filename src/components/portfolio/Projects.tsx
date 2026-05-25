@@ -5,16 +5,16 @@ import p3 from "@/assets/project-3.jpg";
 import p4 from "@/assets/project-4.jpg";
 
 const projects: Project[] = [
-  {
-    title: "Vehicle Repairing System",
-    description:
-      "Built using MEN stack (ejs) that helps to search and find garages nearby solving the real time problems of vehicle owners in need.",
-    image: p1,
-    tags: ["MongoDB", "Node.js", "Express"],
-    live: "https://vehicle-repairing-system.vercel.app/",
-    github: "https://github.com/Roshan632/Vehicle-repairing-system",
-    accent: "cyan",
-  },
+  // {
+  //   title: "Vehicle Repairing System",
+  //   description:
+  //     "Built using MEN stack (ejs) that helps to search and find garages nearby solving the real time problems of vehicle owners in need.",
+  //   image: p1,
+  //   tags: ["MongoDB", "Node.js", "Express"],
+  //   live: "https://vehicle-repairing-system.vercel.app/",
+  //   github: "https://github.com/Roshan632/Vehicle-repairing-system",
+  //   accent: "cyan",
+  // },
   {
     title: "Bus Reservation System",
     description:
@@ -26,7 +26,7 @@ const projects: Project[] = [
     accent: "violet",
   },
   {
-    title: "Airbnb Clone",
+    title: "Resort X",
     description:
       "Built using MEN stack (ejs) that allows Payment using eSewa and Khalti.",
     image: p3,
@@ -35,16 +35,16 @@ const projects: Project[] = [
     github: "https://github.com/Roshan632/Airbnb-Project-MERN",
     accent: "cyan",
   },
-  {
-    title: "Amazon Clone",
-    description:
-      "Built using own ways to make like amazon using only for static ways.",
-    image: p4,
-    tags: ["HTML", "CSS", "JS"],
-    live: "https://roshan632.github.io/amazonclone/",
-    github: "https://github.com/Roshan632/amazonclone",
-    accent: "violet",
-  },
+  // {
+  //   title: "Amazon Clone",
+  //   description:
+  //     "Built using own ways to make like amazon using only for static ways.",
+  //   image: p4,
+  //   tags: ["HTML", "CSS", "JS"],
+  //   live: "https://roshan632.github.io/amazonclone/",
+  //   github: "https://github.com/Roshan632/amazonclone",
+  //   accent: "violet",
+  // },
 ];
 
 export function Projects() {
