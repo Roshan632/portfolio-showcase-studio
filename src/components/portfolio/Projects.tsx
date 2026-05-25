@@ -41,8 +41,8 @@ const projects: Project[] = [
       "Built using own ways to make like amazon using only for static ways.",
     image: p4,
     tags: ["HTML", "CSS", "JS"],
-    live: "https://amazon-clone-roshan.vercel.app/",
-    github: "https://github.com/Roshan632/amazon-clone",
+    live: "https://roshan632.github.io/amazonclone/",
+    github: "https://github.com/Roshan632/amazonclone",
     accent: "violet",
   },
 ];
