@@ -44,7 +44,7 @@ export function Experience() {
           </h2>
         </div>
 
-        <div className="relative max-w-2xl mx-auto pl-6 sm:pl-8 space-y-10 before:absolute before:left-1.75 sm:before:left-[9px] before:top-2 before:bottom-2 before:w-px before:bg-gradient-to-b before:from-primary/50 before:via-border before:to-transparent">
+        <div className="relative max-w-2xl mx-auto pl-6 sm:pl-8 space-y-10 before:absolute before:left-1.75 sm:before:left-2.25 before:top-2 before:bottom-2 before:w-px before:bg-linear-to-b before:from-primary/50 before:via-border before:to-transparent">
           {events.map((e, i) => (
             <motion.div
               key={e.period}
