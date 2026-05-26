@@ -10,25 +10,32 @@ import { Experience } from "@/components/portfolio/Experience";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 
+
+
+import { Loader } from "@/components/portfolio/Loader";
+
 export const Route = createFileRoute("/")({
   component: Index,
-});
+})
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <main>
-        <Hero />
-        <SkeletonMarquee />
-        <About />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Contact />
-      </main>
-      <Footer />
-      <Toaster theme="dark" />
-    </div>
+    <Loader>
+      <div className="min-h-screen bg-background text-foreground">
+        <Navbar />
+        <main>
+          <Hero />
+          <SkeletonMarquee />
+          <About />
+          
+          <Projects />
+          <Skills />
+          <Experience />
+          <Contact />
+        </main>
+        <Footer />
+        <Toaster theme="dark" />
+      </div>
+    </Loader>
   );
 }

@@ -21,7 +21,7 @@ export function About() {
           className="space-y-8"
         >
            <p className="font-display text-3xl sm:text-4xl tracking-tight leading-tight text-pretty">
-            Hi! I am <span className="text-gradient">Roshan Yadav</span>from Jhapa,Nepal{" "}
+            Hi! I am <span className="text-gradient">Roshan Yadav</span> from Jhapa, Nepal{" "}
             
           </p>
           <p className="font-display text-3xl sm:text-4xl tracking-tight leading-tight text-pretty">
@@ -30,7 +30,7 @@ export function About() {
             <span className="text-gradient">millions of requests</span> a day.
           </p>
           <p className="text-muted-foreground text-lg max-w-2xl text-pretty">
-            Four years in, my obsession is the seam between robust backend
+            Two years in, my obsession is the seam between robust backend
             engineering and tactile, almost cinematic frontend design. Off the
             keyboard you'll find me restoring vintage synthesizers,biking, 
             and writing about the philosophy of toolmaking.

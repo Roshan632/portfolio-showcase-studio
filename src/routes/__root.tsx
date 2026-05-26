@@ -72,11 +72,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Alex Dev — Full Stack Engineer Portfolio" },
-      { name: "description", content: "Portfolio of a full stack engineer building high-performance web apps with React, TypeScript and immersive 3D interfaces." },
-      { name: "author", content: "Alex Dev" },
-      { property: "og:title", content: "Alex Dev — Full Stack Engineer Portfolio" },
-      { property: "og:description", content: "Portfolio of a full stack engineer building high-performance web apps with React, TypeScript and immersive 3D interfaces." },
+      { title: "Roshan Yadav | Roshan Dev" },
+      { name: "description", content: "Portfolio of Roshan Yadav, a developer building modern web apps with React, TypeScript, and Tailwind CSS." },
+      { name: "author", content: "Roshan Yadav" },
+      { property: "og:title", content: "Roshan Yadav | Roshan Dev" },
+      { property: "og:description", content: "Portfolio of Roshan Yadav, a developer building modern web apps with React, TypeScript, and Tailwind CSS." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -85,6 +85,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "icon",
+        type: "image/svg+xml",
+        href: "/favicon.svg",
       },
       {
         rel: "preconnect",

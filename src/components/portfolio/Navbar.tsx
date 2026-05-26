@@ -70,12 +70,26 @@ export function Navbar() {
       >
         <div className="h-14 px-6 flex items-center justify-between">
           {/* Brand Logo */}
-          <a 
-            href="#top" 
+          <a
+            href="#top"
             onClick={() => setActiveLink("")}
-            className="font-display font-bold tracking-tighter text-lg text-slate-100 hover:opacity-80 transition-opacity"
+            className="group flex items-center gap-3 text-slate-100 transition-opacity hover:opacity-90"
+            aria-label="Roshan Yadav home"
           >
-            ROSHAN<span className="inline-block text-primary animate-pulse">.</span>DEV
+            <span className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl border border-cyan-300/30 bg-slate-950 shadow-[0_0_24px_rgba(34,211,238,0.18)]">
+              <span className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(34,211,238,0.35),transparent_34%),linear-gradient(135deg,rgba(168,85,247,0.24),transparent_58%)]" />
+              <span className="relative font-display text-sm font-bold tracking-[0.08em] text-white">
+                RY
+              </span>
+            </span>
+            <span className="hidden flex-col leading-none sm:flex">
+              <span className="font-display text-lg font-bold tracking-wide text-foreground">
+                ROSHAN<span className="text-primary">.</span>YADAV
+              </span>
+              {/* <span className="mt-1 font-mono text-[0.62rem] uppercase tracking-[0.28em] text-primary">
+                Roshan.Dev
+              </span> */}
+            </span>
           </a>
 
           {/* Desktop Navigation Links with Animated Slate/Blue Layout Pill */}

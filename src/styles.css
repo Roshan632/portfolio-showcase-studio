@@ -1,3 +1,52 @@
+/* TechStack grid item effects */
+.tech-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1.5px solid var(--color-border);
+  background: linear-gradient(120deg, var(--color-card) 80%, var(--color-primary) 0%);
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.03);
+}
+.tech-tile:hover, .tech-tile:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary), 0 2px 24px 0 rgba(0,0,0,0.08);
+  transform: scale(1.07) rotate(-1deg);
+  z-index: 2;
+}
+.tech-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0 0 24px 6px var(--color-primary);
+}
+.tech-tile:hover::before, .tech-tile:focus::before {
+  opacity: 0.18;
+}
+.tech-tile img {
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+  transition: filter 0.2s;
+}
+.tech-tile:hover img, .tech-tile:focus img {
+  filter: drop-shadow(0 4px 16px var(--color-primary));
+}
+/* Loader spinner animation */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";

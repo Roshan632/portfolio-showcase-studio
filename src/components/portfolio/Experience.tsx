@@ -14,7 +14,7 @@ const events = [
     role: "Student",
     place: "BCA Degree, Mechi Multiple Campus, Jhapa",
     blurb:
-      "Built scalable Node.js APIs and React dashboards for Series A fintech startups.",
+      "Usually, building APIs for Series of startups.",
   },
   // {
   //   period: "2019 — 2021",
